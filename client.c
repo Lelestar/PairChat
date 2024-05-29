@@ -17,6 +17,9 @@ int main() {
         return -1;
     }
 
+    // Afficher le PID du processus client
+    printf("Client démarré avec PID : %d\n", getpid());
+
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_port = htons(PORT);
 
